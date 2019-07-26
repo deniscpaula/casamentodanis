@@ -554,7 +554,7 @@ h1, h2, h3, h4, h5, h6 {
     bottom: 0;
     right: 0;
     z-index: -1;
-    background: rgba(0, 0, 0, 0.4); }
+    background: rgba(0, 0, 0, 0.7); }
   #qbootstrap-countdown .countdown {
     margin-bottom: 0;
     font-size: 70px;
@@ -571,6 +571,11 @@ h1, h2, h3, h4, h5, h6 {
       text-transform: uppercase; }
   #qbootstrap-countdown .display-over {
     z-index: 2; }
+
+.qbootstrap-map {
+  width: 100%;
+  height: 400px;
+  background-color: grey; }
 
 #qbootstrap-dream {
   background-color: #3b3d40; }
