@@ -6,7 +6,7 @@ $grid-gutter-width: 40px !default;
 $border-radius-base:  4px !default;
 $padding-base-vertical: 14px !default;
 
-$brand-primary: #FF847C !default;
+$brand-primary: #0da775 !default;
 
 
 $brand-white: #fff;
@@ -342,7 +342,6 @@ h1, h2, h3, h4, h5, h6 {
 	float: left;
 	width: 100%;
 	padding-bottom: 50px;
-	margin-bottom: 50px;
 	clear: both;
 	&.svg-sm-2 {
 		.svg {
@@ -709,6 +708,10 @@ h1, h2, h3, h4, h5, h6 {
 			}
 		}
 	}
+	.couple{
+		margin: 0 auto;
+		max-width: 300px;
+	}
 }
 
 .qbootstrap-bg{
@@ -723,7 +726,6 @@ h1, h2, h3, h4, h5, h6 {
 	z-index: 0;
 	width: 100%;
 	.section-heading{
-		margin-bottom: 0 !important;
 		padding-bottom: 0;
 		color: $brand-white;
 		h2 {
@@ -1010,6 +1012,7 @@ h1, h2, h3, h4, h5, h6 {
 .gallery{
 	margin-bottom: 30px;
 	.gallery-img{
+		border-radius: 8px;
 		width: 100%;
 		float: left;
 		overflow: hidden;
