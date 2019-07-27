@@ -799,7 +799,9 @@ h1, h2, h3, h4, h5, h6 {
 		border: none;
 		border-radius: 8px;
 		overflow: hidden;
-		padding: 0;
+		padding: 0;    
+		margin: 0 auto 30px;
+		max-width: 400px;
 		.caption{
 			padding: 12px;
 			color: $brand-body-color;
@@ -1032,7 +1034,8 @@ h1, h2, h3, h4, h5, h6 {
 
 //Gallery
 .gallery{
-	margin-bottom: 30px;
+	margin: 0 auto 30px;
+    max-width: 500px;
 	.gallery-img{
 		border-radius: 8px;
 		width: 100%;
