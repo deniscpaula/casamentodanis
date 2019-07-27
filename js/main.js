@@ -94,7 +94,10 @@
 	// Parallax
 	var parallax = function() {
 		if ( !isiPad() || !isiPhone() ) {
-			$(window).stellar();
+			$(window).stellar({
+				horizontalScrolling: false,
+    			responsive: true,
+			});
 		}
 	};
 

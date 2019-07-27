@@ -209,13 +209,13 @@ h1, h2, h3, h4, h5, h6 {
     color: #0da775;
     display: block;
     padding-bottom: 20px;
-    line-height: 1.5; }
+    line-height: 1; }
     @media screen and (max-width: 768px) {
       .section-heading h2 {
         font-size: 50px; } }
   .section-heading h3 {
     font-weight: 300;
-    line-height: 1.5;
+    line-height: 1;
     color: #929292; }
     @media screen and (max-width: 768px) {
       .section-heading h3 {
@@ -272,11 +272,12 @@ h1, h2, h3, h4, h5, h6 {
 .video-hero {
   background-size: cover;
   position: relative;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  background-position: 50% 0; }
   @media screen and (max-width: 768px) {
     .qbootstrap-cover,
     .video-hero {
-      heifght: inherit;
+      height: inherit;
       padding: 3em 0; } }
   .qbootstrap-cover .display-t,
   .video-hero .display-t {
@@ -532,14 +533,16 @@ h1, h2, h3, h4, h5, h6 {
     padding-bottom: 0;
     color: #fff; }
     #qbootstrap-countdown .section-heading h2 {
-      color: #fff; }
+      font-size: 60px;
+      font-family: "Clicker Script", cursive;
+      color: #fff;
+      margin: 0;
+      padding: 0; }
       @media screen and (max-width: 768px) {
         #qbootstrap-countdown .section-heading h2 {
-          font-size: 30px; } }
-    #qbootstrap-countdown .section-heading .datewed {
-      font-family: "Clicker Script", cursive;
-      font-size: 70px;
-      color: #fff; }
+          font-family: "Source Sans Pro", Arial, sans-serif;
+          font-size: 25px;
+          font-weight: bold; } }
     #qbootstrap-countdown .section-heading.svg-sm .svg {
       height: 180px;
       margin-bottom: -50px;
@@ -557,17 +560,17 @@ h1, h2, h3, h4, h5, h6 {
     background: rgba(0, 0, 0, 0.7); }
   #qbootstrap-countdown .countdown {
     margin-bottom: 0;
-    font-size: 70px;
-    color: #fff; }
+    font-size: 60px;
+    color: #fff;
+    line-height: 1.2; }
     #qbootstrap-countdown .countdown span {
-      margin: 0 30px;
+      margin: 0 20px;
       display: inline-block;
       font-family: "Clicker Script", cursive; }
     #qbootstrap-countdown .countdown small {
       display: block;
       font-size: 14px;
       font-family: "Source Sans Pro", Arial, sans-serif;
-      letter-spacing: 10px;
       text-transform: uppercase; }
   #qbootstrap-countdown .display-over {
     z-index: 2; }
