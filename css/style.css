@@ -582,10 +582,22 @@ h1, h2, h3, h4, h5, h6 {
 
 #qbootstrap-dream {
   background-color: #3b3d40; }
-  #qbootstrap-dream .thumbnail .dream-title {
-    font-size: 18px;
-    font-family: "Source Sans Pro", Arial, sans-serif;
-    font-weight: bold; }
+  #qbootstrap-dream .thumbnail {
+    border: none;
+    border-radius: 8px;
+    overflow: hidden;
+    padding: 0; }
+    #qbootstrap-dream .thumbnail .caption {
+      padding: 12px;
+      color: #818892;
+      font-size: 14px; }
+      #qbootstrap-dream .thumbnail .caption p {
+        margin-bottom: 1.1em; }
+    #qbootstrap-dream .thumbnail .dream-title {
+      color: #000;
+      font-size: 20px;
+      font-family: "Source Sans Pro", Arial, sans-serif;
+      font-weight: bold; }
 
 .date {
   display: block;

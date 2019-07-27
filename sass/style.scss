@@ -796,8 +796,21 @@ h1, h2, h3, h4, h5, h6 {
 #qbootstrap-dream{
 	background-color: $brand-overlay-color;
 	.thumbnail{
+		border: none;
+		border-radius: 8px;
+		overflow: hidden;
+		padding: 0;
+		.caption{
+			padding: 12px;
+			color: $brand-body-color;
+			font-size: 14px;
+			p{
+				margin-bottom: 1.1em;
+			}
+		}
 		.dream-title{
-			font-size: 18px;
+			color: $brand-black;
+			font-size: 20px;
 			font-family: $font-primary;
 			font-weight: bold;
 		}
