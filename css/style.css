@@ -22,12 +22,12 @@ body {
   position: relative; }
 
 a {
-  color: #0da775;
+  color: #076566;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s; }
   a:hover, a:active, a:focus {
-    color: #0da775;
+    color: #076566;
     outline: none; }
 
 p {
@@ -66,20 +66,20 @@ h1, h2, h3, h4, h5, h6 {
       -ms-box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.1);
       box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.1); }
       #qbootstrap-header .navbar-brand {
-        color: #0da775 !important; }
+        color: #076566 !important; }
       #qbootstrap-header #navbar li a {
         color: rgba(0, 0, 0, 0.5) !important;
         -webkit-transition: 0.3s;
         -o-transition: 0.3s;
         transition: 0.3s; }
         #qbootstrap-header #navbar li a:hover {
-          color: #0da775 !important; }
+          color: #076566 !important; }
         #qbootstrap-header #navbar li a span:before {
           background: transparent !important; }
       #qbootstrap-header #navbar li.active a {
         background: transparent;
         background: none;
-        color: #0da775 !important; }
+        color: #076566 !important; }
         #qbootstrap-header #navbar li.active a span:before {
           visibility: visible;
           -webkit-transform: scaleX(1);
@@ -102,7 +102,7 @@ h1, h2, h3, h4, h5, h6 {
         height: 2px;
         bottom: 0;
         left: 0;
-        background-color: #0da775;
+        background-color: #076566;
         visibility: hidden;
         -webkit-transform: scaleX(0);
         -moz-transform: scaleX(0);
@@ -148,18 +148,18 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: 0px;
     top: 0; }
     #qbootstrap-header.navbar-fixed-top .navbar-brand {
-      color: #0da775; }
+      color: #076566; }
     #qbootstrap-header.navbar-fixed-top #navbar li a {
       color: rgba(0, 0, 0, 0.5);
       -webkit-transition: 0.3s;
       -o-transition: 0.3s;
       transition: 0.3s; }
       #qbootstrap-header.navbar-fixed-top #navbar li a:hover {
-        color: #0da775; }
+        color: #076566; }
     #qbootstrap-header.navbar-fixed-top #navbar li.active a {
       background: transparent;
       background: none;
-      color: #0da775; }
+      color: #076566; }
       #qbootstrap-header.navbar-fixed-top #navbar li.active a span:before {
         visibility: visible;
         -webkit-transform: scaleX(1);
@@ -182,7 +182,7 @@ h1, h2, h3, h4, h5, h6 {
       letter-spacing: 2px;
       color: #adadad; }
       #qbootstrap-header .navbar-default .brand-slogan em {
-        color: #0da775;
+        color: #076566;
         font-style: normal; }
   #qbootstrap-header a {
     -webkit-transition: 0s;
@@ -203,10 +203,10 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: -80px;
     padding: 0; }
   .section-heading.colored .svg {
-    fill: #0da775; }
+    fill: #076566; }
   .section-heading h2 {
     font-size: 80px;
-    color: #0da775;
+    color: #076566;
     display: block;
     padding-bottom: 20px;
     line-height: 1; }
@@ -400,7 +400,7 @@ h1, h2, h3, h4, h5, h6 {
         cursor: pointer; }
         #qbootstrap-slider-hero .flexslider .flex-control-nav li a.flex-active {
           cursor: pointer;
-          background: #0da775; }
+          background: #076566; }
     #qbootstrap-slider-hero .flexslider .flex-direction-nav {
       display: none; }
     #qbootstrap-slider-hero .flexslider .slider-text {
@@ -480,43 +480,33 @@ h1, h2, h3, h4, h5, h6 {
           text-transform: uppercase;
           letter-spacing: 2px; }
           #qbootstrap-slider-hero .flexslider .slider-text > .slider-text-inner .btn:hover {
-            background: #0da775 !important;
+            background: #076566 !important;
             -webkit-box-shadow: 0px 14px 30px -15px rgba(0, 0, 0, 0.75) !important;
             -moz-box-shadow: 0px 14px 30px -15px rgba(0, 0, 0, 0.75) !important;
             box-shadow: 0px 14px 30px -15px rgba(0, 0, 0, 0.75) !important; }
 
-#qbootstrap-couple img {
-  margin-bottom: 20px;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  border-radius: 50%; }
-#qbootstrap-couple h3 {
-  font-size: 34px;
-  font-family: "Clicker Script", cursive;
-  color: #0da775; }
-  @media screen and (max-width: 768px) {
-    #qbootstrap-couple h3 {
-      font-size: 35px; } }
-#qbootstrap-couple span {
-  color: #0da775;
-  letter-spacing: 10px;
-  text-transform: uppercase;
-  font-size: 14px;
-  border: 1px solid rgba(13, 167, 117, 0.3);
-  padding: 2px 5px; }
-#qbootstrap-couple .amp-center {
-  font-size: 60px;
-  margin-top: 100%;
-  color: #0da775; }
-  @media screen and (max-width: 768px) {
-    #qbootstrap-couple .amp-center {
-      font-size: 40px; } }
-  #qbootstrap-couple .amp-center .colored .svg {
-    fill: #0da775; }
-#qbootstrap-couple .couple {
-  margin: 0 auto;
-  max-width: 300px; }
+#qbootstrap-couple {
+  background-color: #076566;
+  background-image: linear-gradient(110deg, #07797a, #076566, #084650);
+  color: #fff; }
+  #qbootstrap-couple img {
+    margin-bottom: 20px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%; }
+  #qbootstrap-couple h2 {
+    color: #fff; }
+  #qbootstrap-couple h3 {
+    font-size: 34px;
+    font-family: "Clicker Script", cursive;
+    color: #fff; }
+    @media screen and (max-width: 768px) {
+      #qbootstrap-couple h3 {
+        font-size: 35px; } }
+  #qbootstrap-couple .couple {
+    margin: 0 auto;
+    max-width: 300px; }
 
 .qbootstrap-bg {
   background-size: cover;
@@ -581,7 +571,10 @@ h1, h2, h3, h4, h5, h6 {
   background-color: grey; }
 
 #qbootstrap-dream {
-  background-color: #3b3d40; }
+  background-color: #076566;
+  background-image: linear-gradient(110deg, #07797a, #076566, #084650); }
+  #qbootstrap-dream h2, #qbootstrap-dream h3 {
+    color: #fff; }
   #qbootstrap-dream .thumbnail {
     border: none;
     border-radius: 8px;
@@ -675,7 +668,7 @@ h1, h2, h3, h4, h5, h6 {
       z-index: -1; }
     .wedding-events .desc h3 {
       font-size: 40px;
-      color: #0da775;
+      color: #076566;
       display: block;
       margin-bottom: 40px; }
     .wedding-events .desc .date {
@@ -697,7 +690,7 @@ h1, h2, h3, h4, h5, h6 {
       .wedding-events .desc .icon i {
         color: #fff;
         padding: 15px;
-        background: #0da775;
+        background: #076566;
         -webkit-border-radius: 50%;
         -moz-border-radius: 50%;
         -ms-border-radius: 50%;
@@ -748,7 +741,7 @@ h1, h2, h3, h4, h5, h6 {
   #qbootstrap-rsvp .btn {
     height: 54px;
     border: none !important;
-    background: #0da775;
+    background: #076566;
     color: #fff;
     font-size: 16px;
     text-transform: uppercase;
@@ -841,7 +834,7 @@ h1, h2, h3, h4, h5, h6 {
         bottom: 0;
         height: 2px;
         width: 30px;
-        background: #0da775; }
+        background: #076566; }
   #qbootstrap-press .qbootstrap-press-item .qbootstrap-press-img {
     position: absolute;
     right: 0;
@@ -862,7 +855,7 @@ h1, h2, h3, h4, h5, h6 {
   cursor: pointer;
   text-decoration: none; }
   .qbootstrap-nav-toggle.active i::before, .qbootstrap-nav-toggle.active i::after {
-    background: #0da775; }
+    background: #076566; }
   .qbootstrap-nav-toggle:hover, .qbootstrap-nav-toggle:focus, .qbootstrap-nav-toggle:active {
     outline: none;
     border-bottom: none !important; }
@@ -874,17 +867,17 @@ h1, h2, h3, h4, h5, h6 {
     *display: inline;
     width: 25px;
     height: 3px;
-    color: #0da775;
+    color: #076566;
     font: bold 14px/.4 Helvetica;
     text-transform: uppercase;
     text-indent: -55px;
-    background: #0da775;
+    background: #076566;
     transition: all .2s ease-out; }
     .qbootstrap-nav-toggle i::before, .qbootstrap-nav-toggle i::after {
       content: '';
       width: 25px;
       height: 3px;
-      background: #0da775;
+      background: #076566;
       position: absolute;
       left: 0;
       -webkit-transition: 0.2s;
@@ -981,13 +974,13 @@ h1, h2, h3, h4, h5, h6 {
   -o-transition: 0.3s;
   transition: 0.3s; }
   .btn.btn-primary {
-    background: #0da775;
+    background: #076566;
     color: #fff;
     border: none !important;
     border: 2px solid transparent !important; }
     .btn.btn-primary:hover, .btn.btn-primary:active, .btn.btn-primary:focus {
       box-shadow: none;
-      background: #0da775; }
+      background: #076566; }
   .btn:hover, .btn:active, .btn:focus {
     background: #393e46 !important;
     color: #fff;
@@ -1019,10 +1012,10 @@ h1, h2, h3, h4, h5, h6 {
         text-decoration: none;
         border-bottom: none; }
       .social li a.social-box {
-        background: #0da775;
+        background: #076566;
         color: #fff; }
       .social li a.social-circle {
-        background: #0da775;
+        background: #076566;
         color: #fff;
         -webkit-border-radius: 50%;
         -moz-border-radius: 50%;
@@ -1031,10 +1024,10 @@ h1, h2, h3, h4, h5, h6 {
       .social li a:hover {
         background: #393e46 !important; }
   .social.social-box a {
-    background: #0da775;
+    background: #076566;
     color: #fff; }
   .social.social-circle a {
-    background: #0da775;
+    background: #076566;
     color: #fff;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
@@ -1079,7 +1072,7 @@ h1, h2, h3, h4, h5, h6 {
   .form-control:active, .form-control:focus {
     outline: none;
     box-shadow: none;
-    border-color: #0da775; }
+    border-color: #076566; }
 
 .js .animate-box {
   opacity: 0; }

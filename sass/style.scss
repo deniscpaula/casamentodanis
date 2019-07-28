@@ -6,7 +6,7 @@ $grid-gutter-width: 40px !default;
 $border-radius-base:  4px !default;
 $padding-base-vertical: 14px !default;
 
-$brand-primary: #0da775 !default;
+$brand-primary: #076566 !default;
 
 
 $brand-white: #fff;
@@ -676,37 +676,22 @@ h1, h2, h3, h4, h5, h6 {
 
 //COUPLE
 #qbootstrap-couple{
+	background-color: $brand-primary;
+	background-image: linear-gradient(110deg, #07797a, $brand-primary, #084650);
+	color: $brand-white;
 	img{
 		margin-bottom: 20px;
 		@include border-radius(50%);
 	}
+	h2{
+		color: $brand-white;
+	}
 	h3{
 		font-size: 34px;
 		font-family: $font-secondary;
-		color: $brand-primary;
+		color: $brand-white;
 		@media screen and (max-width :$screen-sm) {
 			font-size: 35px;
-		}
-	}
-	span{
-		color: $brand-primary;
-		letter-spacing: 10px;
-		text-transform: uppercase;
-		font-size: 14px;
-		border: 1px solid rgba($brand-primary,.3);
-		padding: 2px 5px;
-	}
-	.amp-center{
-		font-size: 60px;
-		margin-top: 100%;
-		color: rgba($brand-primary,1);
-		@media screen and (max-width :$screen-sm) {
-			font-size: 40px;
-		}
-		.colored {
-			.svg {
-				fill: $brand-primary;
-			}
 		}
 	}
 	.couple{
@@ -794,7 +779,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #qbootstrap-dream{
-	background-color: $brand-overlay-color;
+	background-color: $brand-primary;
+	background-image: linear-gradient(110deg, #07797a, $brand-primary, #084650);
+
+	h2, h3{
+		color: $brand-white;
+	}
 	.thumbnail{
 		border: none;
 		border-radius: 8px;
