@@ -778,16 +778,12 @@ h1, h2, h3, h4, h5, h6 {
 	background-color: grey;
 }
 
-#qbootstrap-dream{
-	background-color: $brand-primary;
-	background-image: linear-gradient(110deg, #07797a, $brand-primary, #084650);
-
-	h2, h3{
-		color: $brand-white;
-	}
+#qbootstrap-dream, 
+#qbootstrap-details{
 	.thumbnail{
 		border: none;
 		border-radius: 8px;
+		box-shadow: rgba($brand-black,.1) 0 5px 10px;
 		overflow: hidden;
 		padding: 0;    
 		margin: 0 auto 30px;
@@ -806,6 +802,26 @@ h1, h2, h3, h4, h5, h6 {
 			font-family: $font-primary;
 			font-weight: bold;
 		}
+	}
+}
+#qbootstrap-details{
+	background-color: $brand-lighter;
+}
+
+#qbootstrap-dream{
+	background-color: $brand-primary;
+	background-image: linear-gradient(110deg, #07797a, $brand-primary, #084650);
+
+	h2, h3{
+		color: $brand-white;
+	}
+}
+
+#qbootstrao-story{
+	.subtext{
+		font-family: $font-primary;
+		font-size: 14px;
+		line-height: 1.5em;
 	}
 }
 
@@ -1236,6 +1252,7 @@ h1, h2, h3, h4, h5, h6 {
 	padding: 50px 0;
 	position: relative;
 	.section-heading{
+		padding-bottom: 0;
 		h2 {
 			color: $brand-white;
 		}
