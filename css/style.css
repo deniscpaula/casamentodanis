@@ -4,14 +4,38 @@
   src: url("../fonts/icomoon/icomoon.eot?srf3rx#iefix") format("embedded-opentype"), url("../fonts/icomoon/icomoon.ttf?srf3rx") format("truetype"), url("../fonts/icomoon/icomoon.woff?srf3rx") format("woff"), url("../fonts/icomoon/icomoon.svg?srf3rx#icomoon") format("svg");
   font-weight: normal;
   font-style: normal; }
-/* =======================================================
-*
-* 	Template Style 
-*	Edit this section
-*
-* ======================================================= */
+@font-face {
+  font-family: 'nattyla';
+  src: url("../fonts/nattyla/nattyla-webfont.ttf") format("truetype"), url("../fonts/nattyla/nattyla-webfont.woff2") format("woff2"), url("../fonts/nattyla/nattyla-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'manksans';
+  src: url("../fonts/manksans/manksans-webfont.ttf") format("truetype"), url("../fonts/manksans/manksans-webfont.woff2") format("woff2"), url("../fonts/manksans/manksans-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'nemesis';
+  src: url("../fonts/nemesis/nemesis_grant-webfont.otf") format("opentype"), url("../fonts/nemesis/nemesis_grant-webfont.woff2") format("woff2"), url("../fonts/nemesis/nemesis_grant-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+.font-primary {
+  font-family: "manksans", "Source Sans Pro", Arial, sans-serif !important; }
+
+.font-secondary {
+  font-family: "nattyla", cursive !important; }
+
+.font-third {
+  font-family: "nemesis" !important; }
+
+.d-flex {
+  display: flex; }
+
+.align-items-center {
+  align-items: center; }
+
 body {
-  font-family: "Source Sans Pro", Arial, sans-serif;
+  font-family: "manksans", "Source Sans Pro", Arial, sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 1.8;
@@ -35,8 +59,11 @@ p {
 
 h1, h2, h3, h4, h5, h6 {
   color: #000;
-  font-family: "Clicker Script", cursive;
+  font-family: "manksans", "Source Sans Pro", Arial, sans-serif;
   font-weight: 400; }
+
+h1, h2 {
+  font-family: "nattyla", cursive; }
 
 ::-webkit-selection {
   color: #818892;
@@ -49,6 +76,10 @@ h1, h2, h3, h4, h5, h6 {
 ::selection {
   color: #818892;
   background: #f9f6f0; }
+
+.stretch {
+  align-items: stretch;
+  display: flex; }
 
 #qbootstrap-header {
   position: fixed;
@@ -67,14 +98,14 @@ h1, h2, h3, h4, h5, h6 {
       box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.1); }
       #qbootstrap-header .navbar-brand {
         color: #076566 !important; }
-      #qbootstrap-header #navbar li a {
+      #qbootstrap-header #navbar li .nav-link {
         color: rgba(0, 0, 0, 0.5) !important;
         -webkit-transition: 0.3s;
         -o-transition: 0.3s;
         transition: 0.3s; }
-        #qbootstrap-header #navbar li a:hover {
+        #qbootstrap-header #navbar li .nav-link:hover {
           color: #076566 !important; }
-        #qbootstrap-header #navbar li a span:before {
+        #qbootstrap-header #navbar li .nav-link span:before {
           background: transparent !important; }
       #qbootstrap-header #navbar li.active a {
         background: transparent;
@@ -87,15 +118,15 @@ h1, h2, h3, h4, h5, h6 {
   #qbootstrap-header .navbar {
     padding-bottom: 0;
     margin-bottom: 0; }
-  #qbootstrap-header #navbar li a {
-    font-family: "Source Sans Pro", Arial, sans-serif;
+  #qbootstrap-header #navbar li .nav-link {
+    font-family: "manksans", "Source Sans Pro", Arial, sans-serif;
     color: rgba(255, 255, 255, 0.5);
     position: relative; }
-    #qbootstrap-header #navbar li a span {
+    #qbootstrap-header #navbar li .nav-link span {
       position: relative;
       display: block;
       padding-bottom: 2px; }
-      #qbootstrap-header #navbar li a span:before {
+      #qbootstrap-header #navbar li .nav-link span:before {
         content: "";
         position: absolute;
         width: 100%;
@@ -114,9 +145,9 @@ h1, h2, h3, h4, h5, h6 {
         -ms-transition: all 0.3s ease-in-out 0s;
         -o-transition: all 0.3s ease-in-out 0s;
         transition: all 0.3s ease-in-out 0s; }
-    #qbootstrap-header #navbar li a:hover {
+    #qbootstrap-header #navbar li .nav-link:hover {
       color: #fff; }
-      #qbootstrap-header #navbar li a:hover span:before {
+      #qbootstrap-header #navbar li .nav-link:hover span:before {
         visibility: visible;
         -webkit-transform: scaleX(1);
         -moz-transform: scaleX(1);
@@ -131,13 +162,19 @@ h1, h2, h3, h4, h5, h6 {
       visibility: visible;
       -webkit-transform: scaleX(1);
       transform: scaleX(1); }
+  #qbootstrap-header .btn-navbar {
+    background-color: #076566;
+    border-radius: 50px;
+    color: #fff !important;
+    padding: 12px 16px;
+    margin: 14px 0; }
   #qbootstrap-header .navbar-brand {
     float: left;
     display: block;
-    font-size: 34px;
+    font-size: 26px;
     padding-left: 0;
     color: #fff;
-    font-family: "Clicker Script", cursive; }
+    font-family: "nattyla", cursive; }
   #qbootstrap-header.navbar-fixed-top {
     position: fixed !important;
     background: #fff;
@@ -192,7 +229,7 @@ h1, h2, h3, h4, h5, h6 {
 .section-heading {
   float: left;
   width: 100%;
-  padding-bottom: 50px;
+  padding-bottom: 30px;
   clear: both; }
   .section-heading.svg-sm-2 .svg {
     height: 150px;
@@ -205,7 +242,7 @@ h1, h2, h3, h4, h5, h6 {
   .section-heading.colored .svg {
     fill: #076566; }
   .section-heading h2 {
-    font-size: 80px;
+    font-size: 60px;
     color: #076566;
     display: block;
     padding-bottom: 20px;
@@ -234,7 +271,7 @@ h1, h2, h3, h4, h5, h6 {
 #qbootstrap-rsvp,
 #qbootstrap-dream,
 #qbootstrap-press {
-  padding: 7em 0; }
+  padding: 5em 0; }
   @media screen and (max-width: 480px) {
     #qbootstrap-couple,
     #qbootstrap-countdown,
@@ -265,222 +302,78 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 1;
   background: rgba(0, 0, 0, 0.4); }
 
-.qbootstrap-cover,
-.video-hero {
+.qbootstrap-cover {
   background-size: cover;
   position: relative;
   background-repeat: no-repeat;
   background-position: 50% 0; }
   @media screen and (max-width: 768px) {
-    .qbootstrap-cover,
-    .video-hero {
+    .qbootstrap-cover {
       height: inherit;
       padding: 3em 0; } }
-  .qbootstrap-cover .display-t,
-  .video-hero .display-t {
+  .qbootstrap-cover .display-t {
     display: table;
     height: 800px;
     width: 100%;
     position: relative;
     z-index: 2; }
     @media screen and (max-width: 768px) {
-      .qbootstrap-cover .display-t,
-      .video-hero .display-t {
+      .qbootstrap-cover .display-t {
         height: 600px; } }
-  .qbootstrap-cover .display-tc,
-  .video-hero .display-tc {
+  .qbootstrap-cover .display-tc {
     display: table-cell;
     vertical-align: middle; }
-    .qbootstrap-cover .display-tc .holder,
-    .video-hero .display-tc .holder {
+    .qbootstrap-cover .display-tc .holder {
       color: #fff;
-      font-family: "Source Sans Pro", Arial, sans-serif;
+      font-family: "manksans", "Source Sans Pro", Arial, sans-serif;
       font-size: 18px;
       text-transform: uppercase;
       letter-spacing: 10px; }
-      .qbootstrap-cover .display-tc .holder span,
-      .video-hero .display-tc .holder span {
+      .qbootstrap-cover .display-tc .holder span {
         position: relative; }
-        .qbootstrap-cover .display-tc .holder span:before, .qbootstrap-cover .display-tc .holder span:after,
-        .video-hero .display-tc .holder span:before,
-        .video-hero .display-tc .holder span:after {
+        .qbootstrap-cover .display-tc .holder span:before, .qbootstrap-cover .display-tc .holder span:after {
           position: absolute;
           top: 49%;
           width: 100px;
           height: 2px;
           background: #fff;
           content: ''; }
-        .qbootstrap-cover .display-tc .holder span:before,
-        .video-hero .display-tc .holder span:before {
+        .qbootstrap-cover .display-tc .holder span:before {
           left: -110px; }
-        .qbootstrap-cover .display-tc .holder span:after,
-        .video-hero .display-tc .holder span:after {
+        .qbootstrap-cover .display-tc .holder span:after {
           right: -110px; }
       @media screen and (max-width: 768px) {
-        .qbootstrap-cover .display-tc .holder,
-        .video-hero .display-tc .holder {
+        .qbootstrap-cover .display-tc .holder {
           letter-spacing: 2px; }
-          .qbootstrap-cover .display-tc .holder span,
-          .video-hero .display-tc .holder span {
+          .qbootstrap-cover .display-tc .holder span {
             position: relative; }
-            .qbootstrap-cover .display-tc .holder span:before, .qbootstrap-cover .display-tc .holder span:after,
-            .video-hero .display-tc .holder span:before,
-            .video-hero .display-tc .holder span:after {
+            .qbootstrap-cover .display-tc .holder span:before, .qbootstrap-cover .display-tc .holder span:after {
               width: 50px;
               height: 2px; }
-            .qbootstrap-cover .display-tc .holder span:before,
-            .video-hero .display-tc .holder span:before {
+            .qbootstrap-cover .display-tc .holder span:before {
               left: -60px; }
-            .qbootstrap-cover .display-tc .holder span:after,
-            .video-hero .display-tc .holder span:after {
+            .qbootstrap-cover .display-tc .holder span:after {
               right: -60px; } }
-    .qbootstrap-cover .display-tc h2,
-    .video-hero .display-tc h2 {
+    .qbootstrap-cover .display-tc h2 {
       color: #fff;
       font-size: 80px;
       margin-bottom: 20px;
       font-weight: 300 !important; }
-      .qbootstrap-cover .display-tc h2 strong,
-      .video-hero .display-tc h2 strong {
+      .qbootstrap-cover .display-tc h2 strong {
         font-weight: 700; }
       @media screen and (max-width: 768px) {
-        .qbootstrap-cover .display-tc h2,
-        .video-hero .display-tc h2 {
+        .qbootstrap-cover .display-tc h2 {
           font-size: 60px; } }
-    .qbootstrap-cover .display-tc p,
-    .video-hero .display-tc p {
+    .qbootstrap-cover .display-tc p {
       color: #fff;
       font-weight: 400;
       font-size: 20px;
       letter-spacing: 10px; }
-    .qbootstrap-cover .display-tc .svg-sm .svg,
-    .video-hero .display-tc .svg-sm .svg {
+    .qbootstrap-cover .display-tc .svg-sm .svg {
       height: 180px;
       margin-bottom: 0; }
-    .qbootstrap-cover .display-tc .colored .svg,
-    .video-hero .display-tc .colored .svg {
+    .qbootstrap-cover .display-tc .colored .svg {
       fill: #fff; }
-
-#qbootstrap-slider-hero {
-  min-height: 800px;
-  background: #fff url(../images/loader.gif) no-repeat center center; }
-  #qbootstrap-slider-hero .flexslider {
-    border: none;
-    z-index: 1;
-    margin-bottom: 0; }
-    #qbootstrap-slider-hero .flexslider .slides {
-      position: relative;
-      overflow: hidden; }
-      #qbootstrap-slider-hero .flexslider .slides li {
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: top center;
-        min-height: 770px;
-        position: relative; }
-        #qbootstrap-slider-hero .flexslider .slides li:after {
-          position: absolute;
-          top: 0;
-          bottom: 0;
-          left: 0;
-          right: 0;
-          content: '';
-          background: rgba(0, 0, 0, 0.4);
-          z-index: 1; }
-    #qbootstrap-slider-hero .flexslider .flex-control-nav {
-      bottom: 7em;
-      z-index: 1000; }
-      #qbootstrap-slider-hero .flexslider .flex-control-nav li a {
-        background: rgba(255, 255, 255, 0.5);
-        box-shadow: none;
-        width: 12px;
-        height: 12px;
-        cursor: pointer; }
-        #qbootstrap-slider-hero .flexslider .flex-control-nav li a.flex-active {
-          cursor: pointer;
-          background: #076566; }
-    #qbootstrap-slider-hero .flexslider .flex-direction-nav {
-      display: none; }
-    #qbootstrap-slider-hero .flexslider .slider-text {
-      display: table;
-      opacity: 0;
-      min-height: 800px;
-      z-index: 9; }
-      #qbootstrap-slider-hero .flexslider .slider-text > .slider-text-inner {
-        display: table-cell;
-        vertical-align: middle;
-        height: 800px; }
-        #qbootstrap-slider-hero .flexslider .slider-text > .slider-text-inner h1, #qbootstrap-slider-hero .flexslider .slider-text > .slider-text-inner h2 {
-          margin: 0;
-          padding: 0;
-          color: white; }
-        #qbootstrap-slider-hero .flexslider .slider-text > .slider-text-inner h1 {
-          margin-bottom: 20px;
-          font-size: 80px;
-          line-height: 1.3;
-          font-weight: 300; }
-          @media screen and (max-width: 768px) {
-            #qbootstrap-slider-hero .flexslider .slider-text > .slider-text-inner h1 {
-              font-size: 30px; } }
-        #qbootstrap-slider-hero .flexslider .slider-text > .slider-text-inner .holder {
-          color: #fff;
-          font-family: "Source Sans Pro", Arial, sans-serif;
-          font-size: 18px;
-          text-transform: uppercase;
-          letter-spacing: 10px;
-          font-weight: 400; }
-          #qbootstrap-slider-hero .flexslider .slider-text > .slider-text-inner .holder span {
-            position: relative; }
-            #qbootstrap-slider-hero .flexslider .slider-text > .slider-text-inner .holder span:before, #qbootstrap-slider-hero .flexslider .slider-text > .slider-text-inner .holder span:after {
-              position: absolute;
-              top: 49%;
-              width: 100px;
-              height: 2px;
-              background: #fff;
-              content: ''; }
-            #qbootstrap-slider-hero .flexslider .slider-text > .slider-text-inner .holder span:before {
-              left: -110px; }
-            #qbootstrap-slider-hero .flexslider .slider-text > .slider-text-inner .holder span:after {
-              right: -110px; }
-          @media screen and (max-width: 768px) {
-            #qbootstrap-slider-hero .flexslider .slider-text > .slider-text-inner .holder {
-              letter-spacing: 2px; }
-              #qbootstrap-slider-hero .flexslider .slider-text > .slider-text-inner .holder span {
-                position: relative; }
-                #qbootstrap-slider-hero .flexslider .slider-text > .slider-text-inner .holder span:before, #qbootstrap-slider-hero .flexslider .slider-text > .slider-text-inner .holder span:after {
-                  width: 50px;
-                  height: 2px; }
-                #qbootstrap-slider-hero .flexslider .slider-text > .slider-text-inner .holder span:before {
-                  left: -60px; }
-                #qbootstrap-slider-hero .flexslider .slider-text > .slider-text-inner .holder span:after {
-                  right: -60px; } }
-        #qbootstrap-slider-hero .flexslider .slider-text > .slider-text-inner h2 {
-          font-size: 20px;
-          line-height: 1.5;
-          margin-bottom: 40px;
-          font-family: "Source Sans Pro", Arial, sans-serif; }
-          #qbootstrap-slider-hero .flexslider .slider-text > .slider-text-inner h2 a {
-            color: rgba(255, 255, 255, 0.5); }
-        #qbootstrap-slider-hero .flexslider .slider-text > .slider-text-inner .date {
-          color: #fff;
-          font-weight: 400;
-          font-size: 24px;
-          letter-spacing: 10px; }
-          #qbootstrap-slider-hero .flexslider .slider-text > .slider-text-inner .date span {
-            padding: 5px 20px;
-            border: 1px solid #fff; }
-        #qbootstrap-slider-hero .flexslider .slider-text > .slider-text-inner .btn {
-          padding: 18px 30px !important;
-          color: #fff;
-          border: none !important;
-          font-size: 12px;
-          font-weight: 700;
-          text-transform: uppercase;
-          letter-spacing: 2px; }
-          #qbootstrap-slider-hero .flexslider .slider-text > .slider-text-inner .btn:hover {
-            background: #076566 !important;
-            -webkit-box-shadow: 0px 14px 30px -15px rgba(0, 0, 0, 0.75) !important;
-            -moz-box-shadow: 0px 14px 30px -15px rgba(0, 0, 0, 0.75) !important;
-            box-shadow: 0px 14px 30px -15px rgba(0, 0, 0, 0.75) !important; }
 
 #qbootstrap-couple {
   background-color: #076566;
@@ -496,7 +389,7 @@ h1, h2, h3, h4, h5, h6 {
     color: #fff; }
   #qbootstrap-couple h3 {
     font-size: 34px;
-    font-family: "Clicker Script", cursive;
+    font-family: "nattyla", cursive;
     color: #fff; }
     @media screen and (max-width: 768px) {
       #qbootstrap-couple h3 {
@@ -507,8 +400,9 @@ h1, h2, h3, h4, h5, h6 {
 
 #qbootstrap-countdown {
   background-size: cover;
-  position: relative;
   background-repeat: no-repeat;
+  padding: 150px 0;
+  position: relative;
   z-index: 0;
   width: 100%; }
   #qbootstrap-countdown .section-heading {
@@ -516,13 +410,13 @@ h1, h2, h3, h4, h5, h6 {
     color: #fff; }
     #qbootstrap-countdown .section-heading h2 {
       font-size: 60px;
-      font-family: "Clicker Script", cursive;
+      font-family: "nattyla", cursive;
       color: #fff;
       margin: 0;
       padding: 0; }
       @media screen and (max-width: 768px) {
         #qbootstrap-countdown .section-heading h2 {
-          font-family: "Source Sans Pro", Arial, sans-serif;
+          font-family: "manksans", "Source Sans Pro", Arial, sans-serif;
           font-size: 25px;
           font-weight: bold; } }
     #qbootstrap-countdown .section-heading.svg-sm .svg {
@@ -548,14 +442,18 @@ h1, h2, h3, h4, h5, h6 {
     #qbootstrap-countdown .countdown span {
       margin: 0 20px;
       display: inline-block;
-      font-family: "Clicker Script", cursive; }
+      font-family: "nemesis"; }
     #qbootstrap-countdown .countdown small {
       display: block;
       font-size: 14px;
-      font-family: "Source Sans Pro", Arial, sans-serif;
+      font-family: "manksans", "Source Sans Pro", Arial, sans-serif;
       text-transform: uppercase; }
   #qbootstrap-countdown .display-over {
     z-index: 2; }
+
+.map-title {
+  color: #076566;
+  font-family: "nemesis"; }
 
 .qbootstrap-map {
   background-color: #ccc;
@@ -568,7 +466,7 @@ h1, h2, h3, h4, h5, h6 {
       border: 10px solid #fff;
       box-shadow: rgba(0, 0, 0, 0.1) 0 5px 10px;
       overflow: hidden;
-      width: 90%; } }
+      width: 100%; } }
 
 #qbootstrap-dream .thumbnail,
 #qbootstrap-details .thumbnail {
@@ -578,21 +476,22 @@ h1, h2, h3, h4, h5, h6 {
   overflow: hidden;
   padding: 0;
   margin: 0 auto 30px;
-  max-width: 400px; }
+  flex: 1; }
   #qbootstrap-dream .thumbnail .caption,
   #qbootstrap-details .thumbnail .caption {
     padding: 12px;
-    color: #818892;
-    font-size: 14px; }
-    #qbootstrap-dream .thumbnail .caption p,
-    #qbootstrap-details .thumbnail .caption p {
-      margin-bottom: 1.1em; }
+    color: #818892; }
+    #qbootstrap-dream .thumbnail .caption .caption-text,
+    #qbootstrap-details .thumbnail .caption .caption-text {
+      font-size: 16px;
+      margin-bottom: 0; }
   #qbootstrap-dream .thumbnail .thumbnail-title,
   #qbootstrap-details .thumbnail .thumbnail-title {
     color: #000;
     font-size: 20px;
-    font-family: "Source Sans Pro", Arial, sans-serif;
-    font-weight: bold; }
+    font-family: "nemesis";
+    font-weight: bold;
+    margin-bottom: 8px; }
 
 #qbootstrap-details {
   background-color: #e9e9e9; }
@@ -600,11 +499,11 @@ h1, h2, h3, h4, h5, h6 {
 #qbootstrap-dream {
   background-color: #076566;
   background-image: linear-gradient(110deg, #07797a, #076566, #084650); }
-  #qbootstrap-dream h2, #qbootstrap-dream h3 {
+  #qbootstrap-dream h2, #qbootstrap-dream h3, #qbootstrap-dream .subtext {
     color: #fff; }
 
 #qbootstrao-story .subtext {
-  font-family: "Source Sans Pro", Arial, sans-serif;
+  font-family: "manksans", "Source Sans Pro", Arial, sans-serif;
   font-size: 14px;
   line-height: 1.5em; }
 
@@ -655,65 +554,6 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
   background-repeat: no-repeat; }
 
-.wedding-events {
-  background: #fff; }
-  @media screen and (max-width: 768px) {
-    .wedding-events {
-      margin-bottom: 2em; } }
-  .wedding-events .ceremony-bg {
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    position: relative;
-    height: 400px; }
-  .wedding-events .desc {
-    padding: 2em;
-    border: 1px solid rgba(0, 0, 0, 0.05);
-    position: relative;
-    z-index: 0; }
-    .wedding-events .desc:after {
-      position: absolute;
-      top: 10px;
-      bottom: 10px;
-      left: 10px;
-      right: 10px;
-      content: '';
-      background: #f4f3e2;
-      z-index: -1; }
-    .wedding-events .desc h3 {
-      font-size: 40px;
-      color: #076566;
-      display: block;
-      margin-bottom: 40px; }
-    .wedding-events .desc .date {
-      display: block; }
-      .wedding-events .desc .date span {
-        display: block;
-        font-size: 16px;
-        color: rgba(0, 0, 0, 0.7); }
-    .wedding-events .desc .icon-tip {
-      position: relative;
-      width: 100%;
-      float: left; }
-    .wedding-events .desc .icon {
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      margin-top: 60%; }
-      .wedding-events .desc .icon i {
-        color: #fff;
-        padding: 15px;
-        background: #076566;
-        -webkit-border-radius: 50%;
-        -moz-border-radius: 50%;
-        -ms-border-radius: 50%;
-        border-radius: 50%; }
-      @media screen and (max-width: 768px) {
-        .wedding-events .desc .icon {
-          position: relative;
-          margin: 0; } }
-
 #qbootstrap-rsvp {
   position: relative; }
   #qbootstrap-rsvp .section-heading {
@@ -741,8 +581,11 @@ h1, h2, h3, h4, h5, h6 {
     color: #fff; }
   #qbootstrap-rsvp .qbootstrap-heading p {
     color: rgba(255, 255, 255, 0.5); }
+  #qbootstrap-rsvp .form-label {
+    width: 100%; }
   #qbootstrap-rsvp .form-control {
     border: 1px solid #ccc;
+    border-radius: 50px;
     font-size: 16px !important;
     width: 100%;
     padding-top: 20px;
@@ -755,13 +598,14 @@ h1, h2, h3, h4, h5, h6 {
   #qbootstrap-rsvp .btn {
     height: 54px;
     border: none !important;
+    border-radius: 50px;
     background: #076566;
     color: #fff;
     font-size: 16px;
     text-transform: uppercase;
     font-weight: 400;
-    padding-left: 50px;
-    padding-right: 50px; }
+    padding-left: 16px;
+    padding-right: 16px; }
   #qbootstrap-rsvp .form-inline .form-group {
     width: 100% !important;
     margin-bottom: 10px; }
@@ -945,27 +789,6 @@ h1, h2, h3, h4, h5, h6 {
     .qbootstrap-nav-toggle {
       display: block; } }
 
-.person {
-  text-align: center;
-  margin-bottom: 40px;
-  float: left;
-  width: 100%; }
-  .person img {
-    display: block;
-    margin: 0 auto;
-    height: 150px;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    border-radius: 50%; }
-  .person .name {
-    font-size: 24px; }
-  .person .position {
-    text-transform: uppercase;
-    color: #c3c3c3;
-    margin-bottom: 30px;
-    letter-spacing: 2px; }
-
 #qbootstrap-footer {
   background-size: cover;
   background-repeat: no-repeat;
@@ -1006,52 +829,6 @@ h1, h2, h3, h4, h5, h6 {
     outline: none !important; }
   .btn.btn-default:hover, .btn.btn-default:focus, .btn.btn-default:active {
     border-color: transparent; }
-
-.social {
-  padding: 0;
-  margin: 0;
-  display: inline-block;
-  position: relative;
-  width: 100%; }
-  .social li {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: inline-block; }
-    .social li a {
-      font-size: 16px;
-      display: table;
-      width: 40px;
-      height: 40px;
-      margin: 0 4px; }
-      .social li a i {
-        display: table-cell;
-        vertical-align: middle; }
-      .social li a:hover, .social li a:active, .social li a:focus {
-        text-decoration: none;
-        border-bottom: none; }
-      .social li a.social-box {
-        background: #076566;
-        color: #fff; }
-      .social li a.social-circle {
-        background: #076566;
-        color: #fff;
-        -webkit-border-radius: 50%;
-        -moz-border-radius: 50%;
-        -ms-border-radius: 50%;
-        border-radius: 50%; }
-      .social li a:hover {
-        background: #393e46 !important; }
-  .social.social-box a {
-    background: #076566;
-    color: #fff; }
-  .social.social-circle a {
-    background: #076566;
-    color: #fff;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    border-radius: 50%; }
 
 .js .to-animate,
 .js .to-animate-2,

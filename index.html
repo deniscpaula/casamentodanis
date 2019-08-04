@@ -75,14 +75,18 @@
 	          	<a class="navbar-brand" href="index.html">Daniele & Denis</a> 
 	        </div>
 	        <div id="navbar" class="navbar-collapse collapse">
-	          <ul class="nav navbar-nav navbar-right">
-	            <li class="active"><a href="#" data-nav-section="home"><span>Início</span></a></li>
-	            <li><a href="#" data-nav-section="save-the-date"><span>Save The Date</span></a></li>
-	            <li><a href="#" data-nav-section="details"><span>Detalhes</span></a></li>
-	            <li><a href="#" data-nav-section="story"><span>História</span></a></li>
-	            <li><a href="#" data-nav-section="dream"><span>Sonhos</span></a></li>
-	            <li><a href="#" data-nav-section="rsvp"><span>RSVP</span></a></li>
-	          </ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#" class="nav-link" data-nav-section="home"><span>Início</span></a></li>
+					<li><a href="#" class="nav-link" data-nav-section="save-the-date"><span>Save The Date</span></a></li>
+					<li><a href="#" class="nav-link" data-nav-section="details"><span>Detalhes</span></a></li>
+					<li><a href="#" class="nav-link" data-nav-section="story"><span>História</span></a></li>
+					<li><a href="#" class="nav-link" data-nav-section="dream"><span>Sonhos</span></a></li>
+					<li>
+						<a href="#" class="btn-navbar" data-nav-section="rsvp">
+							<span>Confirmar presença</span>
+						</a>
+					</li>
+				</ul>
 	        </div>
 		    </nav>
 		  <!-- </div> -->
@@ -116,7 +120,7 @@
 				<div class="col-md-8 col-md-offset-2 animate-box">
 					<div class="col-md-12 text-center section-heading svg-sm colored">
 						<h2>Vão se casar</h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam accusamus, sequi, minima repellendus explicabo magni aperiam, ducimus perferendis ad quidem suscipit omnis unde veritatis pariatur. Commodi, nisi. Iusto, accusantium a.</p>
+						<p>Cada detalhe da nossa cerimônia e festa de casamento foi planejado com muito amor e carinho. Estaremos rodeados de pessoas queridas, muito verde, luz natural e flores da estação.</p>
 					</div>
 				</div>
 			</div>
@@ -124,7 +128,7 @@
 				<div class="col-md-8 col-md-offset-2 text-center">
 					<div class="couple">
 						<img src="images/casamentodanis.jpg" class="img-responsive">
-						<h3>#casamentodanis</h3>
+						<h3 class="font-primary">#casamentodanis</h3>
 					</div>
 				</div>
 			</div>
@@ -164,64 +168,59 @@
 				<div class="col-md-8 col-md-offset-2">
 					<div class="col-md-12 text-center section-heading svg-sm colored">
 						<h2>Cerimônia &amp; Festa</h2>
-						<div class="row">
-							<div class="col-md-10 col-md-offset-1 subtext">
-								<h3>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</h3>
-							</div>
-						</div>
 					</div>
+				</div>
+				<div class="col-md-10 col-md-offset-1 text-center">
+					<p class="subtext">Casaremos no Recanto Serimbura porque nos apaixonamos pela tranquilidade e área verde do espaço.
+						<br>O estacionamento do local não estará disponível, é preciso deixar o carro na redondeza.
+						<br>Caso queira aproveitar as bebidas, vá de Uber <i class="icon-smile-o"></i></p>
 				</div>
 			</div>
 		</div>
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-md-10 col-md-offset-1">
-					<div class="col-sm-6">
+					<div class="col-md-6 col-sm-12">
 						<div class="thumbnail">
 							<img src="images/serimbura.jpg" class="img-responsive">
 							<div class="caption">
-								<p class="thumbnail-title">Local</p>
-								<p>
+								<p class="thumbnail-title">Endereço</p>
+								<p class="caption-text">
 									Recanto Serimbura, R. Piraúna, 22 - Jardim do Golfe, São José dos Campos - SP, 12244-000
 								</p>
 							</div>
 						</div>
 					</div>
-					<div class="col-sm-6">
+					<div class="col-md-6 col-sm-12">
 						<div class="thumbnail">
 							<img src="images/o-que-vestir.jpg" class="img-responsive">
 							<div class="caption">
-								<p class="thumbnail-title">O que vestir</p>
-								<p>
-									A cerimônia será realizada ao ar livre, sugerimos o uso do Traje Esporte Fino.
+								<p class="thumbnail-title">Traje sugerido</p>
+								<p class="caption-text">
+									A cerimônia será realizada às 16:00, ao ar livre, sugerimos o uso do Traje Esporte Fino.
 								</p>
 							</div>
 						</div>
 					</div>
-				</div>
-			</div>
-			<div class="row animate-box">
-				<div class="col-md-8 col-md-offset-2">
-					<div class="col-md-12 text-center section-heading svg-sm colored">
-						<h2>Mapa</h2>
+					<div class="col-md-12 text-center">
+						<h3 class="map-title">Mapa</h3>
 					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-12">
-					<div id="map" class="qbootstrap-map"></div>
-					<script>
-						function initMap() {
-							var recantoSerimbura = {lat: -23.2017779, lng: -45.923146};
-							var map = new google.maps.Map(
-								document.getElementById('map'), {zoom: 14, center: recantoSerimbura});
-							var marker = new google.maps.Marker({position: recantoSerimbura, map: map});
-						}
-					</script>
-					<script async defer
-						src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDP8ND0oFc3OqHb9K7Py_cuMvonBsv3dMk&callback=initMap">
-					</script>
-				</div>
+	
+					<div class="col-md-12">
+						<div id="map" class="qbootstrap-map"></div>
+						<script>
+							function initMap() {
+								var recantoSerimbura = {lat: -23.2017779, lng: -45.923146};
+								var map = new google.maps.Map(
+									document.getElementById('map'), {zoom: 14, center: recantoSerimbura});
+								var marker = new google.maps.Marker({position: recantoSerimbura, map: map});
+							}
+						</script>
+						<script async defer
+							src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDP8ND0oFc3OqHb9K7Py_cuMvonBsv3dMk&callback=initMap">
+						</script>
+					</div>
+				</div>				
 			</div>
 		</div>
 	</div>
@@ -232,12 +231,10 @@
 				<div class="col-md-8 col-md-offset-2">
 					<div class="col-md-12 text-center section-heading svg-sm colored">
 						<h2>Nossa história</h2>
-						<div class="row">
-						<div class="col-md-10 col-md-offset-1">
-							<p class="subtext">Nos conhecemos nos corredores de uma agência de Publicidade em meados de 2010. Nossos olhares se cruzaram e foi amor a primeira vista. Hoje, a nossa história completa dez anos. O pedido de noivado veio de surpresa e cheio de amor, em uma viagem de mini férias para a região dos Lagos, Rio de Janeiro. Nós, o Ziggy, nossas famílias e amigos vibraram com a notícia. Agora te convidamos para participar de mais uma momento especial de nossas vidas.</p>
-						</div>
 					</div>
-					</div>
+				</div>
+				<div class="col-md-10 col-md-offset-1 text-center">
+					<p class="subtext">Nos conhecemos nos corredores de uma agência de Publicidade em meados de 2010. Nossos olhares se cruzaram e foi amor a primeira vista. Hoje, a nossa história completa dez anos. O pedido de noivado veio de surpresa e cheio de amor, em uma viagem de mini férias para a região dos Lagos, Rio de Janeiro. Nós, o Ziggy, nossas famílias e amigos vibraram com a notícia. Agora te convidamos para participar de mais uma momento especial de nossas vidas.</p>
 				</div>
 			</div>
 		</div>
@@ -336,12 +333,10 @@
 				<div class="col-md-8 col-md-offset-2">
 					<div class="col-md-12 text-center section-heading svg-sm colored">
 						<h2>Nossos sonhos</h2>
-						<div class="row">
-						<div class="col-md-10 col-md-offset-1 subtext">
-							<h3>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</h3>
-						</div>
 					</div>
-					</div>
+				</div>
+				<div class="col-md-10 col-md-offset-1 text-center">
+					<p class="subtext">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
 				</div>
 			</div>
 		</div>
@@ -418,32 +413,41 @@
 			<div class="row animate-box">
 				<div class="col-md-8 col-md-offset-2">
 					<div class="col-md-12 text-center section-heading svg-sm colored">
-						<h2>RSVP</h2>
-						<div class="row">
-						<div class="col-md-10 col-md-offset-1 subtext">
-							<h3>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</h3>
-						</div>
-					</div>
+						<h2>Confirmação de Presença</h2>
+						<h3>RSVP</h3>
 					</div>
 				</div>
 			</div>
 			<div class="row animate-box">
 				<div class="col-md-10 col-md-offset-1">
 					<form class="form-inline">
-						<div class="col-md-4 col-sm-4">
+						<div class="col-md-12 col-sm-12">
 							<div class="form-group">
-								<label for="name" class="sr-only">Name</label>
-								<input type="name" class="form-control" id="name" placeholder="Name">
+								<label class="form-label" for="danis-name">Nome completo</label>
+								<input type="text" class="form-control" id="danis-name" placeholder="Nome completo">
 							</div>
 						</div>
-						<div class="col-md-4 col-sm-4">
+						<div class="col-md-6 col-sm-6">
 							<div class="form-group">
-								<label for="email" class="sr-only">Email</label>
-								<input type="email" class="form-control" id="email" placeholder="Email">
+								<label class="form-label" for="danis-email">Email</label>
+								<input type="email" class="form-control" id="danis-email" placeholder="Email">
 							</div>
 						</div>
-						<div class="col-md-4 col-sm-4">
-							<button type="submit" class="btn btn-default btn-block">I am Attending</button>
+						<div class="col-md-6 col-sm-6">
+							<div class="form-group">
+								<label class="form-label" for="danis-tel">Telefone/celular</label>
+								<input type="tel" class="form-control" id="danis-tel" placeholder="(DD) 00000-0000" maxlength="15">
+							</div>
+						</div>
+
+						<div class="col-md-12 col-sm-12">
+							<div class="form-group">
+								<label class="form-label" for="danis-name">Informe os acompanhantes separados por vírgula <small>(marido, mulher, namorado e etc)</small></label>
+								<input type="text" class="form-control" id="danis-name" placeholder="João Silva, Ana Maria">
+							</div>
+						</div>
+						<div class="col-md-12 col-sm-12">
+							<button type="submit" class="btn btn-default">Confirmar presença</button>
 						</div>
 					</form>
 				</div>
